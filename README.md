@@ -1,5 +1,3 @@
-# StalePetrolStationDetectionUsingProbeData
-
 # Detecting Stale Petrol Stations Using Probe Data
 
 ## Overview
