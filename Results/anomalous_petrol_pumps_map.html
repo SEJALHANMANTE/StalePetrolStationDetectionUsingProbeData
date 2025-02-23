@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6b201cdb65859f72d8d716702fc122fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6b201cdb65859f72d8d716702fc122fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6b201cdb65859f72d8d716702fc122fd = L.map(
+                "map_6b201cdb65859f72d8d716702fc122fd",
+                {
+                    center: [-6.2123310653349195, 106.83449817076453],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_efd7c46f1e4ac64cd93fc67fc07cc93e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_efd7c46f1e4ac64cd93fc67fc07cc93e.addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var marker_fef2e8d342ebd7a653c6457a22a93253 = L.marker(
+                [-6.2148874805, 106.874234719],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_cd567a1936d47a296a3a5bf3f4f65750 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fef2e8d342ebd7a653c6457a22a93253.setIcon(icon_cd567a1936d47a296a3a5bf3f4f65750);
+        
+    
+        var popup_8da036c8ae453c985816c0f534c270f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fdb204d4fae11a22662d5f689f8fcb7 = $(`<div id="html_6fdb204d4fae11a22662d5f689f8fcb7" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 21<br>     <b>Coordinates:</b> (-6.2148874805, 106.874234719)     </div>`)[0];
+                popup_8da036c8ae453c985816c0f534c270f4.setContent(html_6fdb204d4fae11a22662d5f689f8fcb7);
+            
+        
+
+        marker_fef2e8d342ebd7a653c6457a22a93253.bindPopup(popup_8da036c8ae453c985816c0f534c270f4)
+        ;
+
+        
+    
+    
+            var marker_1131590b29b0b94cc4691a8bcfa1cc7e = L.marker(
+                [-6.1321286541, 106.818788421],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_b038236c14dbcef0a521bfb2f003620a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1131590b29b0b94cc4691a8bcfa1cc7e.setIcon(icon_b038236c14dbcef0a521bfb2f003620a);
+        
+    
+        var popup_243da47e5606ca3715a5a301b3e0faa5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92366d649b1bb5eec88dbb34164d12f2 = $(`<div id="html_92366d649b1bb5eec88dbb34164d12f2" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 84<br>     <b>Coordinates:</b> (-6.1321286541, 106.818788421)     </div>`)[0];
+                popup_243da47e5606ca3715a5a301b3e0faa5.setContent(html_92366d649b1bb5eec88dbb34164d12f2);
+            
+        
+
+        marker_1131590b29b0b94cc4691a8bcfa1cc7e.bindPopup(popup_243da47e5606ca3715a5a301b3e0faa5)
+        ;
+
+        
+    
+    
+            var marker_39b00ebe6ddad1c8d32c3c221e7e4441 = L.marker(
+                [-6.118688, 106.982992],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_e214deda552b28e1be2ff9fc29364864 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_39b00ebe6ddad1c8d32c3c221e7e4441.setIcon(icon_e214deda552b28e1be2ff9fc29364864);
+        
+    
+        var popup_eccc369f7eeb1f24378822f349cab979 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b54de6f01e932c9053ab803ffd6c7574 = $(`<div id="html_b54de6f01e932c9053ab803ffd6c7574" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 86<br>     <b>Coordinates:</b> (-6.118688, 106.982992)     </div>`)[0];
+                popup_eccc369f7eeb1f24378822f349cab979.setContent(html_b54de6f01e932c9053ab803ffd6c7574);
+            
+        
+
+        marker_39b00ebe6ddad1c8d32c3c221e7e4441.bindPopup(popup_eccc369f7eeb1f24378822f349cab979)
+        ;
+
+        
+    
+    
+            var marker_ef2b6ea4d108d4fa21a3873aea918548 = L.marker(
+                [-6.12266897467, 106.861810889],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_6c681650f0afded29652a2c40275e72b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ef2b6ea4d108d4fa21a3873aea918548.setIcon(icon_6c681650f0afded29652a2c40275e72b);
+        
+    
+        var popup_7ac877c92df429a19ec9d3096e4b9e55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_51171a1b1a6aeeefc024460a19723483 = $(`<div id="html_51171a1b1a6aeeefc024460a19723483" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 264<br>     <b>Coordinates:</b> (-6.12266897467, 106.861810889)     </div>`)[0];
+                popup_7ac877c92df429a19ec9d3096e4b9e55.setContent(html_51171a1b1a6aeeefc024460a19723483);
+            
+        
+
+        marker_ef2b6ea4d108d4fa21a3873aea918548.bindPopup(popup_7ac877c92df429a19ec9d3096e4b9e55)
+        ;
+
+        
+    
+    
+            var marker_a0d002bfb59e021843b8b56a0ef59eba = L.marker(
+                [-6.37152374438, 106.831266714],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_a4c334dd92ae92ce02bbc4d18b3b5cb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0d002bfb59e021843b8b56a0ef59eba.setIcon(icon_a4c334dd92ae92ce02bbc4d18b3b5cb0);
+        
+    
+        var popup_3692830af51dc5d644b61685fea0ed97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbf642b8943fe9fa751bd99d21531055 = $(`<div id="html_cbf642b8943fe9fa751bd99d21531055" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 424<br>     <b>Coordinates:</b> (-6.37152374438, 106.831266714)     </div>`)[0];
+                popup_3692830af51dc5d644b61685fea0ed97.setContent(html_cbf642b8943fe9fa751bd99d21531055);
+            
+        
+
+        marker_a0d002bfb59e021843b8b56a0ef59eba.bindPopup(popup_3692830af51dc5d644b61685fea0ed97)
+        ;
+
+        
+    
+    
+            var marker_ac539a73787ee7c4e286caee42b58532 = L.marker(
+                [-6.16213733897, 106.881546432],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_279be315463cfcd9774f62204cf22be0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ac539a73787ee7c4e286caee42b58532.setIcon(icon_279be315463cfcd9774f62204cf22be0);
+        
+    
+        var popup_b362f95100f59f49196f3177372e7b7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20745b4498a5ed0bbdacbc40b6c4f78a = $(`<div id="html_20745b4498a5ed0bbdacbc40b6c4f78a" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 520<br>     <b>Coordinates:</b> (-6.16213733897, 106.881546432)     </div>`)[0];
+                popup_b362f95100f59f49196f3177372e7b7a.setContent(html_20745b4498a5ed0bbdacbc40b6c4f78a);
+            
+        
+
+        marker_ac539a73787ee7c4e286caee42b58532.bindPopup(popup_b362f95100f59f49196f3177372e7b7a)
+        ;
+
+        
+    
+    
+            var marker_4aa55369f7cbf3cc127566848ebe7187 = L.marker(
+                [-6.15970914602, 106.883052558],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_2bd0c2b0a1389ce1d512f1b807d75397 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4aa55369f7cbf3cc127566848ebe7187.setIcon(icon_2bd0c2b0a1389ce1d512f1b807d75397);
+        
+    
+        var popup_5457cd21117575db6c1d3ec694c74717 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9aa5dad2fd5dedfb4c3d1ea59f960b22 = $(`<div id="html_9aa5dad2fd5dedfb4c3d1ea59f960b22" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 590<br>     <b>Coordinates:</b> (-6.15970914602, 106.883052558)     </div>`)[0];
+                popup_5457cd21117575db6c1d3ec694c74717.setContent(html_9aa5dad2fd5dedfb4c3d1ea59f960b22);
+            
+        
+
+        marker_4aa55369f7cbf3cc127566848ebe7187.bindPopup(popup_5457cd21117575db6c1d3ec694c74717)
+        ;
+
+        
+    
+    
+            var marker_45d94b9191b813b0c4a5734b83b2b33b = L.marker(
+                [-6.13033144325, 106.830607184],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_971943ebd1fa08afa111fa6e52cb287a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_45d94b9191b813b0c4a5734b83b2b33b.setIcon(icon_971943ebd1fa08afa111fa6e52cb287a);
+        
+    
+        var popup_e62cb1534e2a497c20b88149a6a5e531 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70d777836e60d5ff3d4afb35dc809f64 = $(`<div id="html_70d777836e60d5ff3d4afb35dc809f64" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 591<br>     <b>Coordinates:</b> (-6.13033144325, 106.830607184)     </div>`)[0];
+                popup_e62cb1534e2a497c20b88149a6a5e531.setContent(html_70d777836e60d5ff3d4afb35dc809f64);
+            
+        
+
+        marker_45d94b9191b813b0c4a5734b83b2b33b.bindPopup(popup_e62cb1534e2a497c20b88149a6a5e531)
+        ;
+
+        
+    
+    
+            var marker_ad5b756ff25b93e3f7636740d025d9ae = L.marker(
+                [-6.20969708584, 106.873945667],
+                {
+}
+            ).addTo(map_6b201cdb65859f72d8d716702fc122fd);
+        
+    
+            var icon_e6c95b5ff5c338009bd1cb69831be77a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "exclamation-triangle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ad5b756ff25b93e3f7636740d025d9ae.setIcon(icon_e6c95b5ff5c338009bd1cb69831be77a);
+        
+    
+        var popup_eb1502581f6d92289c0533f8f64f283e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1304adf8cf1fe67a4e12bb10f93ec83c = $(`<div id="html_1304adf8cf1fe67a4e12bb10f93ec83c" style="width: 100.0%; height: 100.0%;">     <b>Anomalous Petrol Pump</b><br>     <b>PlaceID:</b> 602<br>     <b>Coordinates:</b> (-6.20969708584, 106.873945667)     </div>`)[0];
+                popup_eb1502581f6d92289c0533f8f64f283e.setContent(html_1304adf8cf1fe67a4e12bb10f93ec83c);
+            
+        
+
+        marker_ad5b756ff25b93e3f7636740d025d9ae.bindPopup(popup_eb1502581f6d92289c0533f8f64f283e)
+        ;
+
+        
+    
+</script>
+</html>
