@@ -6,7 +6,12 @@ This project aims to detect stale (non-operational) petrol stations using probe 
 ## Solution Approach
 ### 1. **Rule-Based Spatial Outlier Detection & Adaptive Buffering**
    - This method detects stale petrol stations based on defined spatial rules and adaptive buffering techniques.
-   - Petrol stations that fall outside defined spatial norms are flagged as stale.
+   - In this approach, stale stations are identified based on:
+1. Low probe count (less than a defined threshold, e.g., 5 probes).
+2. Road type: Petrol stations located on for e.g., "residential" or "tertiary" roads are flagged as stale.
+3. Tunnel status: If the station is near a tunnel (i.e., tunnel column is not NaN), it may indicate a difficult-to-access location, which could also be flagged.
+4. Outlier Detection (IQR Method): Probe data near stations is analyzed using an adaptive buffer calculation based on probe density. The Interquartile Range (IQR) method is used to detect outliers in probe counts. Petrol stations with probe counts significantly above or below the normal range are flagged as stale.
+- The rule-based stale stations and outlier stations are combined and stored in a new GeoDataFrame. Petrol stations that fall outside defined spatial norms are flagged as stale.
 
 ### 2. **Anomaly Detection with Explainable AI (XAI)**
    - We employ an **Isolation Forest Model** to detect anomalies in petrol station activity.
@@ -24,12 +29,6 @@ This project aims to detect stale (non-operational) petrol stations using probe 
 ## Results
 ### **Rule-Based Approach Results**
 - Petrol stations that violated predefined spatial norms were flagged as stale.
--  In this approach, stale stations are identified based on:
-1. Low probe count (less than a defined threshold, e.g., 5 probes).
-2. Road type: Petrol stations located on "residential" or "tertiary" roads are flagged as stale.
-3. Tunnel status: If the station is near a tunnel (i.e., tunnel column is not NaN), it may indicate a difficult-to-access location, which could also be flagged.
-4. Outlier Detection (IQR Method): Probe data near stations is analyzed using an adaptive buffer calculation based on probe density. The Interquartile Range (IQR) method is used to detect outliers in probe counts. Petrol stations with probe counts significantly above or below the normal range are flagged as stale.
-- The rule-based stale stations and outlier stations are combined and stored in a new GeoDataFrame.
 - Example non-stale petrol pumps: Place ID 337, Place ID 343.
 ![image](https://github.com/user-attachments/assets/e82cc31b-4793-4a2c-9ddd-5f288203c48c)
 
